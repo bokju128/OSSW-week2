@@ -15,8 +15,15 @@ def divide(a, b):
 if __name__ == '__main__':
 
     ### 사용자 입력
-    print('\n첫번째 숫자를 입력하세요.')
-    input1 = input('입력: ')
+    while True:
+        print('\n첫번째 숫자를 입력하세요.')
+        input1 = input('입력: ')
+        try:
+            input1 = float(input1)
+            break
+        except:
+            print('\n잘못된 입력입니다, 다시 첫번째 숫자를 입력하세요.')
+            pass
 
     print('\n원하는 사칙연산 기호 중 하나를 선택하세요. (+, -, *, /)')
     act = input('기호: ')
