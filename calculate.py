@@ -1,6 +1,6 @@
 ### 사칙연산 함수 정의
 def plus(a, b):
-    return a + b
+    return float(a) + float(b)
 
 def minus(a, b):
     return a - b
@@ -34,4 +34,4 @@ if __name__ == '__main__':
         result = mul(input1, input2)
     elif act == '/':
         result = divide(input1, input2)
-    print(f'사칙연산 결과는 {result}입니다.')
+    print(f'\n\n사칙연산 결과는 {result}입니다.')
